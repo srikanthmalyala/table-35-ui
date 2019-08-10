@@ -4,17 +4,15 @@
   <title class="text-info">This is a Bootstrap example</title>  
     
   <meta name="viewport" content="width=device-width, initial-scale=1">  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
-   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
 </head>  
 <body>  
-<div width="100%" ng-app="hacktronApp">
-<div class="container"  >  
+<div class="container">  
   <h1>Queue Management</h1>  
 </div>  
-<div ng-controller="queueCtrl">
+
 	<table class="table table-striped">
-		<tr><td>Queue Name:</td><td><input type="text" class="form-control" id="queueName"/></td> <td><button id="addqueue" class="btn btn-primary" onclick="addQueue()">Add</button></td></tr>
+		<tr><td>Queue Name:</td><td><input type="text" class="form-control" id="queueName"/></td> <td><button id=""addQueueName" class="btn btn-primary" onclick="addQueueName();">Add</button></td></tr>
 	</table>
 	
 		<table class="table table-striped">
@@ -27,23 +25,24 @@
     </tr>
   </thead>
   <tbody>
-  
-  
-    <tr ng-repeat="queObj in queObjList">
+    <tr>
       <th scope="row">1</th>
-      <td>{{queObj.queue_id}}</td>
-      <td>{{queObj.queue_name}}</td>
+      <td>Mark</td>
+      <td>Otto</td>
       <td>
 <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Add</button>
 <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal1">View</button>
 </td>
-
-
     </tr>
-   
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
   </tbody>
 </table>
-</div>
+
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
@@ -103,11 +102,9 @@
       
     </div>
   </div>  
-  </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
-  <script type="text/javascript" src="<%=request.getContextPath();%>/js/hacktron.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
 	<script>
 		$('#wrapper').dialog({
     autoOpen: false,
