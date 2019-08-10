@@ -89,8 +89,9 @@
       <th scope="row">1</th>
 <td><input type="checkbox"/></td>
       <td>Message</td>
-      <td><a href="" >delete</a> <a href="" >update</a></td>
+      <td><a href="" >update</a></td>
 </tr>
+<tr><td><a href="" >Delete</a></td></tr>
 </tbody>
 </table>          
 
